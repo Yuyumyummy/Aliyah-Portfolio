@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity4</title>
+        <style>
+            /* Set background color for the whole page */
+            body {
+                background-color: #f0f8ff; /* Light blue background */
+                font-family: Arial, sans-serif;
+            }
+
+            /* Styling for the form title */
+            h2 {
+                text-align: center;
+                color: #4b0082; /* Indigo (purple) */
+            }
+
+            /* Table styling */
+            table {
+                width: 50%;
+                margin: 0 auto;
+                border-collapse: collapse;
+            }
+
+            /* Table cell styling */
+            td {
+                padding: 10px;
+                font-size: 16px;
+            }
+
+            /* Label styling */
+            label {
+                color: #4b0082; /* Purple */
+                font-weight: bold;
+            }
+
+            /* Input fields (text, number, radio, checkbox, and select) */
+            input[type="text"], input[type="number"], select {
+                width: 100%;
+                padding: 8px;
+                margin: 5px 0;
+                border: 2px solid #4b0082; /* Purple border */
+                border-radius: 4px;
+                background-color: #e6e6fa; /* Light lavender background */
+                color: #000;
+            }
+
+            input[type="radio"], input[type="checkbox"] {
+                margin-right: 10px;
+            }
+
+            /* Submit and Reset button styling */
+            button {
+                background-color: #4b0082; /* Purple background */
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            button[type="submit"]:hover, button[type="reset"]:hover {
+                background-color: #800080; /* Darker purple on hover */
+            }
+
+            /* Add some space between rows */
+            tr {
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>User Information Form</h2>
+        <form action="" method="post">
+            <table>
+                <!-- First Name -->
+                <tr>
+                    <td><label for="fname">First Name: </label></td>
+                    <td><input type="text" id="fname" name="firstname" required></td>
+                </tr>
+
+                <!-- Last Name -->
+                <tr>
+                    <td><label for="lname">Last Name: </label></td>
+                    <td><input type="text" id="lname" name="lastname" required></td>
+                </tr>
+
+                <!-- Age -->
+                <tr>
+                    <td><label for="age">Age: </label></td>
+                    <td><input type="number" id="age" name="age"></td>
+                </tr>
+
+                <!-- Gender -->
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+
+                <!-- Hobbies -->
+                <tr>
+                    <td><label>Hobbies:</label></td>
+                    <td>
+                        <input type="checkbox" id="hobby1" name="hobby" value="reading">
+                        <label for="hobby1">Reading</label><br>
+                        <input type="checkbox" id="hobby2" name="hobby" value="sleeping">
+                        <label for="hobby2">Sleeping</label><br>
+                        <input type="checkbox" id="hobby3" name="hobby" value="gaming">
+                        <label for="hobby3">Gaming</label><br>
+                        <input type="checkbox" id="hobby4" name="hobby" value="watching">
+                        <label for="hobby4">Watching</label><br>
+                        <input type="checkbox" id="hobby5" name="hobby" value="cooking">
+                        <label for="hobby5">Cooking</label>
+                    </td>
+                </tr>
+
+                <!-- Year Level -->
+                <tr>
+                    <td><label for="year-level">Year Level</label></td>
+                    <td>
+                        <select id="year-level" name="year_level">
+                            <option value="1st-year">1st year</option>
+                            <option value="2nd-year">2nd year</option>
+                            <option value="3rd-year">3rd year</option>
+                            <option value="4th-year">4th year</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Submit and Reset Buttons -->
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                    <td><button type="reset">Clear</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

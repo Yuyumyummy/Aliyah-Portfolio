@@ -1,0 +1,53 @@
+/* Global Styling */
+body {
+    background-color: #f4f7fc; /* Neutral background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.header {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #4f81bd; /* Primary blue */
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 80%;
+    height: 50px;
+    background-color: #2ca6a4; /* Secondary teal */
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Main Content Styling */
+.main {
+    width: 70%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff; /* White card for form */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
